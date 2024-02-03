@@ -1,7 +1,6 @@
 const chats = require("./saved/chats.json");
 const permissions = require("./saved/permissions.json");
 const qrcode = require("qrcode-terminal");
-const NewsScraper = require("./functions/news");
 const fs = require("fs");
 const { Client } = require("whatsapp-web.js");
 
@@ -9,7 +8,6 @@ class WhatsAppBot {
   constructor() {
     this.client = new Client({ puppeteer: { args: ["--no-sandbox"] } });
     this.commands = new Map();
-    this.news = new NewsScraper(this.client);
     this.client.on("qr", this.displayQRCode.bind(this));
     this.client.on("ready", this.onClientReady.bind(this));
     this.client.on("message", this.handleMessage.bind(this));
