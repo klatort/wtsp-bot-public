@@ -1,0 +1,10 @@
+{
+  "12012345678901234": {
+    "name": "chat group",
+    "permissions": "group"
+  },
+  "51999999999": {
+    "name": "personal chat",
+    "permissions": "personal"
+  }
+}

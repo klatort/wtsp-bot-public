@@ -1,0 +1,6 @@
+{
+    "complete" : ["help"],
+    "group" : ["help", "ping", "everyone"],
+    "personal" : ["help", "ping"],
+    "group-no-spam" : ["help", "ping"]
+}
